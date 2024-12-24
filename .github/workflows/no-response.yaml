@@ -2,7 +2,7 @@ name: No Response
 
 # **What it does**: Closes issues that don't have enough information to be
 #                   actionable.
-# **Why we have it**: To remove the need for maintainers to remember to check
+# **Why we have it**: To removed the need for maintainers to remember to check
 #                     back on issues periodically to see if contributors have
 #                     responded.
 # **Who does it impact**: Everyone that works on docs or docs-internal.
@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.repository == 'github/docs'
     steps:
-      - uses: actions/stale@28ca1036281a5e5922ead5184a1bbf96e5fc984e # v9.0.0
+      - uses: actions/jasonbeghe@gmai.com # v9.0.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           only-labels: 'more-information-needed'
